@@ -50,7 +50,6 @@ body {
 
 video {
     width: 100vw;
-
 }
 
 .mascara {
@@ -105,8 +104,8 @@ p {
     gap: 20px;
     flex-direction: column;
     position: fixed;
-    top: 50px;
-    left: 50px;
+    left: -300px;
+    top: 30%;
     padding: 20px;
     border-radius: 5px;
 }
@@ -129,15 +128,96 @@ textarea {
 }
 
 .mascara-formulario {
+    visibility: hidden;
     position: fixed;
     top: 0;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     width: 100vw;
     height: 100vh;
-    visibility: hidden;
-   
 }
+
 .wtp:hover{
     transform: scale(1.1);
     transition: all .7s ease-in-out;
 }
+@media screen and (max-width:1030px){
+    .imagem-mario-luigi{
+        height: 400px;
+    }
+    p{
+        font-size: 17px;
+        text-align: left;
+    }
+       .caixa-mae{
+        padding: 40px;
+       }
+
+       .header {
+        justify-content: center;
+       }
+       video {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+       }
+}
+@media screen and (max-width: 820px) {
+    .logo-mario {
+        display: block;
+        text-align: center;
+        margin-top: auto;
+    }
+    
+}
+
+@media screen and (max-width: 806px){
+    .caixa-mae{
+        padding: 0;
+        display: block;
+       text-align: center;
+    }
+    .caixa-principal{
+        width:100%;
+    }
+    .logo-mario{
+        display: block;
+        margin: 80px auto  0;
+
+    }
+    
+    p {
+        width: 500px;
+        text-align: left;
+        margin: 20px auto;
+    }
+
+    }
+
+@media screen and (max-width: 768px) {
+    .imagem-mario-luigi{
+        margin-top: 50px;
+
+    }
+    
+}
+
+    @media screen and (max-width:600px){
+        .header{
+            display: none;
+        }
+        .caixa-video{
+            height: 100vh;
+            width: 100vw;
+        }
+        video{
+            height: 100vh;
+            object-fit: cover;
+            width: 100%;
+        }
+        .imagem-mario-luigi{
+            margin-top: 60px;
+        }
+        p{
+            display: none;
+        }
+    }
